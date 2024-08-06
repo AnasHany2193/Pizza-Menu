@@ -50,11 +50,29 @@ function App() {
   return (
     // Nesting
     <>
-      <h1>Hello React!</h1>
-      <Pizza />
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
+    </>
+  );
+}
+
+function Header() {
+  return <h1>Fast React Pizza Co.</h1>;
+}
+
+function Menu() {
+  return (
+    <>
+      <h2>Our Menu</h2>
       <Pizza />
     </>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>{new Date().toLocaleTimeString()}We're currently open!</footer>
   );
 }
 
