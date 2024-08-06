@@ -76,12 +76,20 @@ function Menu() {
 
       {/* Conditional Rendering With Ternaries */}
       {numPizzas ? (
-        <ul className="pizzas">
-          {/* Rendering Lists */}
-          {pizzas.map((pizza, index) => (
-            <Pizza pizzaObj={pizza} key={index} />
-          ))}
-        </ul>
+        // React Fragments
+        <>
+          <p>
+            Authentic Italian cuisine. 6 creative dishes to choose from. All
+            from our stone oven, all organic, all delicious.
+          </p>
+
+          <ul className="pizzas">
+            {/* Rendering Lists */}
+            {pizzas.map((pizza, index) => (
+              <Pizza pizzaObj={pizza} key={index} />
+            ))}
+          </ul>
+        </>
       ) : (
         <p>We're still woking on our menu. Please come later 🥺</p>
       )}
