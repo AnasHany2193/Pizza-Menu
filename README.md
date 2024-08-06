@@ -50,6 +50,10 @@ To get started with the Pizza Menu app, follow these steps:
 - **`src/`**: Contains all the React components and styling for the project.
 - **`public/`**: Includes static files like images and the main HTML file.
 
+## Live Demo
+
+Check out the live demo [here](https://pizza-menu-2193.netlify.app/)! 🚀
+
 ## 💬 Contact
 
 For any questions or suggestions, feel free to reach out:
